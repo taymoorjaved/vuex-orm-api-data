@@ -1,5 +1,8 @@
 export default {
-  setTodos(state, { todos }) {
-    state.todos = todos;
+  setStopInfo(state, { stopInfo }) {
+    state.stopInfo = stopInfo;
+  },
+  setRouteInfo(state, { routeInfo }) {
+    state.routeInfo = routeInfo;
   },
 };

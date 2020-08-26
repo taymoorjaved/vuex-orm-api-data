@@ -2,7 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/apidata">Api Data</router-link>
+      <router-link to="/stop-info">Stop Info</router-link> |
+      <router-link to="/route-info">Route Info</router-link>
     </div>
     <router-view />
   </div>

@@ -11,13 +11,16 @@ const routes = [
     component: Home,
   },
   {
-    path: "/apidata",
-    name: "Apidata",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    path: "/stop-info",
+    name: "StopInfo",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Apidata.vue"),
+      import(/* webpackChunkName: "about" */ "../views/StopInfo.vue"),
+  },
+  {
+    path: "/route-info",
+    name: "RouteInfo",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/RouteInfo.vue"),
   },
 ];
 

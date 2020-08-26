@@ -1,28 +1,25 @@
 <template>
   <div class="container">
     <tr class="head">
-      <th>ID</th>
-      <th>TITLE</th>
-      <th>STATUS</th>
+      <th>CATEGORY</th>
+      <th>NAME</th>
     </tr>
-    <tr v-for="(todo, index) in todos" :key="index">
-      <td>{{ todo.id }}</td>
-      <td>{{ todo.title }}</td>
-      <td>{{ todo.completed }}</td>
+    <tr v-for="(stopInfo, index) in stopInfos" :key="index">
+      <td>{{ stopInfo.category }}</td>
+      <td>{{ stopInfo.name }}</td>
     </tr>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld",
   computed: {
-    todos() {
-      return this.$store.state.todos;
+    stopInfos() {
+      return this.$store.state.stopInfo;
     },
   },
   created() {
-    this.$store.dispatch("getToDos");
+    this.$store.dispatch("getStopInfo");
   },
 };
 </script>
